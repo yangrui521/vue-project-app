@@ -43,6 +43,7 @@
             <li><a href="javescript:;">数码家电</a></li>
             <li><a href="javescript:;">礼品特色</a></li>
           </ul>
+          <div class="zhe"></div>
       </div>
     </div>
   </header>
@@ -88,6 +89,7 @@
     width 100%
     height 146px
     z-index 100
+    background-color #fff
     .headerSearch
       padding 7px 15px
       display flex
@@ -117,6 +119,8 @@
         color #666
         img
           margin-right 5px
+          width 28px
+          height 28px
           span
             color #666
       .login
@@ -209,4 +213,8 @@
             border 2px solid #d9d9d9
             margin 8px
             border-radius 8px
+        .zhe
+          width 100%
+          height 100%
+          background-color #999999
 </style>

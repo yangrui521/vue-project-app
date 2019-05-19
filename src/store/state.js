@@ -1,1 +1,5 @@
-export default {}
+export default {
+  shouye:{},
+  shouyeTop:[],
+  shouyeLunbo:[]
+}

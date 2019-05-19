@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport"
-          content="width=device-width,initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5,user-scalable=no">
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
     <link rel="stylesheet" href="./static/css/reset.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1193981_43dj88uhoq.css">
     <title>vue-project</title>
@@ -12,7 +12,10 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
     <script>
-      
+      //取消浏览器默认行为
+      document.addEventListener('touchstart',function(event){
+        event.preventDefault();
+      }, false)
      
       //点透
       !(function () {

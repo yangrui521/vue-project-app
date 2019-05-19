@@ -11,9 +11,9 @@ export default function ajax(url,data={},method='GET') {
     } else {
       promise = axios.post(url,data)
     }
-    promise.then((response)=>{
+    promise.then(response=>{
       resolve(response.data)
-    }).catch((error)=>{
+    }).catch(error=>{
       reject('请求出错'+error.message)
     })
   })

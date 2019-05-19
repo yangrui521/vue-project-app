@@ -44,6 +44,7 @@
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   
   .footer
+    background-color #fff
     position fixed
     left 0
     bottom 0

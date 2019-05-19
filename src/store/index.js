@@ -1,15 +1,23 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import category from './modules/category/category'
-import categoryList from './modules/categoryList/categoryList'
-import homeData from './modules/homeData/homeData'
+import actions from './actions'
+import mutations from './mutations'
+import getters from './getters'
+import state from './state'
+
+
+
 
 
 Vue.use(Vuex)
 export default new Vuex.Store({
-  modules:{
+  state,
+  mutations,
+  actions,
+  getters,
+  /*modules:{
     categoryList,
     category,
     homeData
-  }
+  }*/
 })

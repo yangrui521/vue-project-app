@@ -1,6 +1,7 @@
-
-
 import ajax from './ajax'
-const prefix = '/api'
 
-export const reqMockHomeData = ajax('/mock/home')
+/*const prefix = '/api'*/
+
+/*export const reqPolicyDescList = ajax( '/mock/home')*/
+export const reqShouye = ()=>ajax( '/home')
+

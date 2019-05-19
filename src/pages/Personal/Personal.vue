@@ -2,14 +2,14 @@
   <div class="personal">
     <div class="personalHeader">
       <div class="headerLeft">
-        <i class="iconfont icon-home"></i>
+        <i class="iconfont icon-home" @click="$router.push('/home')"></i>
       </div>
       <div class="headerCenter">
         <span>网易严选</span>
       </div>
       <div class="headerRight">
-        <i class="iconfont icon-icon-test left"></i>
-        <i class="iconfont icon-gouwuche right"></i>
+        <i class="iconfont icon-icon-test left" @click="$router.push('/search')"></i>
+        <i class="iconfont icon-gouwuche right" @click="$router.push('/shopCard')"></i>
       </div>
     </div>
     <div class="personalContent">

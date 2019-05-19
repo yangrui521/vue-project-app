@@ -1,20 +1,20 @@
 import Mock from 'mockjs'
-import homeData from './homeData.json'
-import categoryData from './category.json'
-import categoryListData from './categoryList.json'
+import shouye from './shouye.json'
+import fenlei from './fenlei.json'
+import list from './list.json'
 
 // 1. 定义 模拟数据 路由接口接口 - ajax("/mock/home")  会得到 {code:0, data: homeData}
-Mock.mock('/mock/home', {
+Mock.mock('/home', {
   code: 0,
-  data: homeData
+  data: shouye
 });
 
-Mock.mock( '/mock/category', {
+Mock.mock('/fenlei', {
   code: 0,
-  data: categoryData
+  data: fenlei
 });
 
-Mock.mock( '/mock/category/list', {
+Mock.mock('/list', {
   code: 0,
-  data: categoryListData
+  data: list
 });
