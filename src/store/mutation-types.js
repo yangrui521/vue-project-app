@@ -7,6 +7,8 @@ export const  RECEIVE_SHOUYE= "receive_shouye"
 export const  RECEIVE_SHOUYETOP= "receive_shouyetop"
 
 export const  RECEIVE_SHOUYELUNBO= "receive_shouyelunbo"
+export const  RECEIVE_TWOLIST= "receive_twolist"
+
 
 
 

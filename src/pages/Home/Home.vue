@@ -10,6 +10,7 @@
       <XinPin></XinPin>
       <RenQi></RenQi>
       <ZhuanTi></ZhuanTi>
+      <ZhongChou></ZhongChou>
     </div>
   </div>
 </template>
@@ -26,6 +27,7 @@
   import XinPin from './component/xinpin/xinpin'
   import RenQi from './component/renqi/renqi'
   import ZhuanTi from './component/zhuanti/zhuanti'
+  import ZhongChou from './component/zhongchou/zhongchou'
 
 
 
@@ -45,7 +47,8 @@
       XianShi,
       XinPin,
       RenQi,
-      ZhuanTi
+      ZhuanTi,
+      ZhongChou
     },
     mounted() {
       this.$store.dispatch('getHomeData')

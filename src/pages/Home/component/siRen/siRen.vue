@@ -58,7 +58,7 @@
             loop: true,
             autoplay:true,
             pagination: {
-              el: '.personal_shop_swiper_box .swiper-pagination',
+              el: '.swiper-pagination',
               clickable: true,
               type: 'custom'
             },
@@ -89,10 +89,12 @@
       .swiper-container
         overflow inherit
         display flex
-        
         .swiper-pagination
+          width 750px
+          height 70px
           background #fff
           transform translateY(100px)
+          margin-bottom 20px
         .personalShop-item
           float left
           width 210px

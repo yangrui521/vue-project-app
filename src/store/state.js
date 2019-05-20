@@ -1,5 +1,6 @@
 export default {
   shouye:{},
   shouyeTop:[],
-  shouyeLunbo:[]
+  shouyeLunbo:[],
+  twoList:[]
 }

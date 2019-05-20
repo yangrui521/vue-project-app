@@ -36,9 +36,9 @@
     },
     mounted(){
       this.$nextTick(()=>{
-        this.BScroll = new BScroll('.zhuanti_content',{
-          scrollX:true,
-          click: true,
+        this.BScroll = new BScroll('.swiper-container',{
+          /*scrollX:true,*/
+          /*click: true,*/
         })
         
       })
@@ -64,11 +64,13 @@
         span
           font-size 28px
     .zhuanti_content
+      width 690px
       position relative
       padding 0 30px 30px
       background-color #fff
       overflow hidden
       .zhuanti_ul
+        width 690px
         overflow visible
         height 378px
         display flex

@@ -1,5 +1,5 @@
-import {reqShouye} from '../api/index'
-import {RECEIVE_SHOUYE,RECEIVE_SHOUYETOP,RECEIVE_SHOUYELUNBO} from './mutation-types'
+import {reqList, reqShouye} from '../api/index'
+import {RECEIVE_SHOUYE,RECEIVE_SHOUYETOP,RECEIVE_SHOUYELUNBO,RECEIVE_TWOLIST} from './mutation-types'
 export default {
   async getHomeData({commit}){
     const result = await reqShouye()
@@ -20,7 +20,14 @@ export default {
     if (result.code===0){
       const shouyeLunbo = result.data.personalShop
       commit(RECEIVE_SHOUYELUNBO,shouyeLunbo)
-      console.log(shouyeLunbo)
+    }
+  },
+  async getList({commit}){
+    const result = await reqList()
+    if (result.code===0){
+      const twoList = result.data
+      commit(RECEIVE_TWOLIST,twoList)
+      console.log(twoList)
     }
   },
 }

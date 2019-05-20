@@ -1,4 +1,4 @@
-import {RECEIVE_SHOUYE,RECEIVE_SHOUYETOP,RECEIVE_SHOUYELUNBO} from './mutation-types'
+import {RECEIVE_SHOUYE,RECEIVE_SHOUYETOP,RECEIVE_SHOUYELUNBO,RECEIVE_TWOLIST} from './mutation-types'
 
 
 export default {
@@ -11,5 +11,9 @@ export default {
   [RECEIVE_SHOUYELUNBO](state,shouyeLunbo){
     state.shouyeLunbo = shouyeLunbo
     console.log(shouyeLunbo)
+  },
+  [RECEIVE_TWOLIST](state,twoList){
+    state.twoList = twoList
+    console.log(twoList)
   },
 }
