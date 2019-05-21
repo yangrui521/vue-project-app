@@ -8,9 +8,9 @@
         <span>更多></span>
       </a>
     </div>
-    <div class="zhuanti_content swiper-container">
-      <ul class="zhuanti_ul swiper-wrapper">
-        <li class="zhuanti_li swiper-slide" v-for="(item,index) in zhuanList" :key="index">
+    <div class="zhuanti_content">
+      <ul class="zhuanti_ul">
+        <li class="zhuanti_li" v-for="(item,index) in zhuanList" :key="index">
           <a href="javascript:;" class="zhuanti_a ">
             <img :src="item.itemPicUrl" alt="">
             <div class="zhuanti_footer">
@@ -35,13 +35,12 @@
       })
     },
     mounted(){
-      this.$nextTick(()=>{
-        this.BScroll = new BScroll('.swiper-container',{
-          /*scrollX:true,*/
-          /*click: true,*/
+        new BScroll('.zhuanti_content',{
+          scrollX:true,
+          click: true,
         })
         
-      })
+      
     }
   }
 </script>
@@ -70,7 +69,7 @@
       background-color #fff
       overflow hidden
       .zhuanti_ul
-        width 690px
+        width 100%
         overflow visible
         height 378px
         display flex

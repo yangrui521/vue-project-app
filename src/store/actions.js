@@ -1,5 +1,13 @@
-import {reqList, reqShouye} from '../api/index'
-import {RECEIVE_SHOUYE,RECEIVE_SHOUYETOP,RECEIVE_SHOUYELUNBO,RECEIVE_TWOLIST} from './mutation-types'
+import {reqList, reqShouye,reqTabs} from '../api/index'
+import {
+  RECEIVE_SHOUYE,
+  RECEIVE_SHOUYETOP,
+  RECEIVE_SHOUYELUNBO,
+  RECEIVE_TWOLIST,
+  RECEIVE_TABS
+} from './mutation-types'
+
+
 export default {
   async getHomeData({commit}){
     const result = await reqShouye()
@@ -28,6 +36,14 @@ export default {
       const twoList = result.data
       commit(RECEIVE_TWOLIST,twoList)
       console.log(twoList)
+    }
+  },
+  async getTabs({commit}){
+    const result = await reqTabs()
+    if (result.code==="200"){
+      const tabs = result.data
+      commit(RECEIVE_TABS,tabs)
+      console.log(tabs)
     }
   },
 }

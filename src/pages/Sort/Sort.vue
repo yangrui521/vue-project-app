@@ -23,15 +23,15 @@
         </div>
         <div class="sort_content_right_bottom">
           <ul class="sort_content_right_bottom_ul">
-            <li class="sort_content_right_bottom_li" v-for="(c,index) in getList[indexx].subCateList" :key="index">
-              <a href="javascript:;" class="sort_content_right_bottom_a">
-                <div class="sort_content_right_bottom_a_img">
-                  <img :src="c.wapBannerUrl" alt="">
-                </div>
-                <div class="sort_content_right_bottom_a_span">{{c.name}}</div>
-              </a>
-            </li>
-          </ul>
+              <li class="sort_content_right_bottom_li" v-for="(c,index) in getList[indexx].subCateList" :key="index">
+                <a href="javascript:;" class="sort_content_right_bottom_a">
+                  <div class="sort_content_right_bottom_a_img">
+                    <img :src="c.wapBannerUrl" alt="">
+                  </div>
+                  <div class="sort_content_right_bottom_a_span">{{c.name}}</div>
+                </a>
+              </li>
+            </ul>
         </div>
       </div>
     </div>
@@ -59,6 +59,13 @@
         scrollY:true,
         click: true,
       })
+      
+     
+       new BScroll('.sort_content_right_bottom',{
+         scrollY:true,
+         click: true,
+       })
+     
     },
     methods:{
       addActive(index){
@@ -79,6 +86,8 @@
       flex-direction column
       justify-content center
       border-bottom 1px solid #eee
+      position relative
+      z-index 100
       .sort_header_content
         height 56px
         display flex
@@ -100,10 +109,10 @@
         height 1100px
         display flex
         flex-direction column
-        /*border-right 1px solid #eee*/
+        border-right 1px solid #eee
         .sort_content_left_ul
           width 100%
-          height 100%
+          height 1170px
           padding 0 0 40px
           .sort_content_left_li
             width 100%
@@ -136,9 +145,11 @@
             border-radius 4px
         .sort_content_right_bottom
           width 528px
-          height 100%
+          height 840px
           display flex
+          overflow hidden
           .sort_content_right_bottom_ul
+            height 1080px
             display flex
             justify-content space-between
             flex-wrap wrap

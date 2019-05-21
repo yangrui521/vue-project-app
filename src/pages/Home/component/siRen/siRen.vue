@@ -44,7 +44,7 @@
             bigArr.push(smallArr)
           }
           smallArr.push(c)
-          if (smallArr.length===8){
+          if (smallArr.length===3){
             smallArr = []
           }
         })
@@ -93,8 +93,7 @@
           width 750px
           height 70px
           background #fff
-          transform translateY(100px)
-          margin-bottom 20px
+          margin-bottom -32PX
         .personalShop-item
           float left
           width 210px

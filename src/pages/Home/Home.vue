@@ -11,6 +11,8 @@
       <RenQi></RenQi>
       <ZhuanTi></ZhuanTi>
       <ZhongChou></ZhongChou>
+      <FuYong></FuYong>
+      <Footer></Footer>
     </div>
   </div>
 </template>
@@ -28,6 +30,9 @@
   import RenQi from './component/renqi/renqi'
   import ZhuanTi from './component/zhuanti/zhuanti'
   import ZhongChou from './component/zhongchou/zhongchou'
+  import FuYong from './component/fuyong/fuyong'
+  import Footer from './component/footer/footer'
+
 
 
 
@@ -48,7 +53,9 @@
       XinPin,
       RenQi,
       ZhuanTi,
-      ZhongChou
+      ZhongChou,
+      FuYong,
+      Footer
     },
     mounted() {
       this.$store.dispatch('getHomeData')

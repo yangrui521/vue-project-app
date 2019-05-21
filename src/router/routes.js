@@ -4,7 +4,8 @@ import Article from '../pages/Article/Article'
 import Personal from '../pages/Personal/Personal'
 import ShopCard from '../pages/ShopCard/ShopCard'
 import Search from '../pages/Home/Search/Search'
-
+import PhoneLogin from '../pages/Personal/phoneLogin/phoneLogin'
+import EmailLogin from '../pages/Personal/EmailLogin/EmailLogin'
 
 
 
@@ -23,7 +24,17 @@ export default [
   },
   {
     path:'/personal',
-    component:Personal
+    component:Personal,
+    children:[
+      {
+        path:'/personal/phoneLogin',
+        component:PhoneLogin,
+      },
+      {
+        path:'/personal/EmailLogin',
+        component:EmailLogin,
+      }
+    ]
   },
   {
     path:'/shopcard',
