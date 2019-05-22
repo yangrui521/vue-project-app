@@ -13,6 +13,9 @@ export const  RECEIVE_TABS= "receive_tabs"
 
 export const  RECEIVE_RECOMMEN= "receive_recommen"
 
+export const  RECEIVE_SEARCH ="receive_search"
+
+
 
 
 

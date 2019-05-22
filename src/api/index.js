@@ -24,3 +24,8 @@ export const reqLists = (page, size, type) => ajax(`${prefix}/topic/v1/look/getL
 // 其它组件 数据 ---- http://m.you.163.com/topic/v1/find/getTabData.json
 export const reqTabData = (page, size, tabId) => ajax(`${prefix}/topic/v1/find/getTabData.json`, {page, size, tabId})
 
+
+//发送热搜接口
+export const reqSearch = ()=>ajax(`${prefix}/xhr/search/init.json`)
+//发送搜索请求接口
+export const reqSearchValue = (keywordPrefix)=>ajax(`${prefix}/xhr/search/searchAutoComplete.json?`,{keywordPrefix})

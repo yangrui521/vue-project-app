@@ -4,7 +4,8 @@ import {
   RECEIVE_SHOUYELUNBO,
   RECEIVE_TWOLIST,
   RECEIVE_TABS,
-  RECEIVE_RECOMMEN
+  RECEIVE_RECOMMEN,
+  RECEIVE_SEARCH
 } from './mutation-types'
 
 
@@ -26,6 +27,9 @@ export default {
   },
   [RECEIVE_RECOMMEN](state,recommen){
     state.recommen = recommen
-    console.log(recommen)
+  },
+  [RECEIVE_SEARCH](state,searchData){
+    state.searchData = searchData
+    console.log(searchData)
   },
 }

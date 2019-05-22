@@ -1,5 +1,5 @@
 <template>
-	<footer class="footer">
+	<footer class="Footer">
     <ul class="footer_list">
       <li class="item" :class="$route.path==='/home'? 'item active':'item'"
           @click="$router.replace('/home')"
@@ -13,7 +13,7 @@
         <i class="iconfont icon-iconset0497"></i>
         <span>分类</span>
       </li>
-      <li class="item" :class="$route.path==='/article'? 'item active':'item'"
+      <li class="item" :class="$route.path==='/article/faxian'? 'item active':'item'"
           @click="$router.replace('/article')"
       >
         <i class="iconfont icon-tupian" ></i>
@@ -43,7 +43,7 @@
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   
-  .footer
+  .Footer
     background-color #fff
     position fixed
     left 0

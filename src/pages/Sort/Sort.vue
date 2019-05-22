@@ -59,12 +59,14 @@
         scrollY:true,
         click: true,
       })
-      
+      setTimeout(()=>{
+        new BScroll('.sort_content_right_bottom',{
+          scrollY:true,
+          click: true,
+        })
+      },2000)
      
-       new BScroll('.sort_content_right_bottom',{
-         scrollY:true,
-         click: true,
-       })
+      
      
     },
     methods:{

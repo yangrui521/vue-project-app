@@ -4,5 +4,6 @@ export default {
   shouyeLunbo:[],
   twoList:[],
   tabs:[],
-  recommen:[]
+  recommen:[],
+  searchData:{}
 }

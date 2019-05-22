@@ -13,7 +13,10 @@ import ZhenXuan from '../pages/Article/zhenxuan/zhenxuan'
 export default [
   {
     path:'/home',
-    component:Home
+    component:Home,
+    meta:{
+
+    }
   },
   {
     path:'/sort',

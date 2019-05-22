@@ -3,17 +3,19 @@
     <div class="fuyong_top" v-for="(item,index) in shouye" :key="index">
       <img :src="item.titlePicUrl" alt="">
       <div class="foyong_bottom">
-        <ul>
-          <li v-for="(c,index) in item.itemList" :key="index">
-            <div class="div">
-              <img :src="c.scenePicUrl" alt="">
-            </div>
-            <div class="div1">
-              <span>{{c.name}}</span>
-              <span class="price">￥{{c.counterPrice}}</span>
-            </div>
-          </li>
-        </ul>
+        <div>
+          <ul>
+            <li v-for="(c,index) in item.itemList" :key="index">
+              <div class="div">
+                <img :src="c.scenePicUrl" alt="">
+              </div>
+              <div class="div1">
+                <span>{{c.name}}</span>
+                <span class="price">￥{{c.counterPrice}}</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     
@@ -50,9 +52,11 @@
         width 100%
         margin-bottom 20px
       .foyong_bottom
+        width 500px
         height 100%
         margin 0 30px 30px
         ul
+          width 1000px
           display flex
           overflow hidden
           li

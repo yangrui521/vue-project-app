@@ -69,7 +69,7 @@
       background-color #fff
       overflow hidden
       .zhuanti_ul
-        width 100%
+        width 10000px
         overflow visible
         height 378px
         display flex
@@ -80,6 +80,7 @@
           padding-bottom 24px
           background-color #f5f5f5
           border-radius 10px
+          overflow hidden
           .zhuanti_a
             display block
             width 480px
@@ -88,7 +89,7 @@
             border-radius 10px
             img
               width 480px
-              height auto
+              height 268px
               margin-bottom 10px
             .zhuanti_footer
               padding 0 20px

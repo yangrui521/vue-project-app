@@ -1,11 +1,12 @@
-import {reqList, reqShouye,reqTabs,reqRecommendData} from '../api/index'
+import {reqList, reqShouye,reqTabs,reqRecommendData,reqSearch} from '../api/index'
 import {
   RECEIVE_SHOUYE,
   RECEIVE_SHOUYETOP,
   RECEIVE_SHOUYELUNBO,
   RECEIVE_TWOLIST,
   RECEIVE_TABS,
-  RECEIVE_RECOMMEN
+  RECEIVE_RECOMMEN,
+  RECEIVE_SEARCH
 } from './mutation-types'
 
 
@@ -51,8 +52,14 @@ export default {
     if (result.code==="200"){
       const recommen = result.data
       commit(RECEIVE_RECOMMEN,recommen)
-      console.log(recommen)
     }
   },
-
+  async getSearch({commit}){
+    const result = await reqSearch()
+    if (result.code==="200"){
+      const searchData = result.data
+      commit(RECEIVE_SEARCH,searchData)
+      console.log(searchData)
+    }
+  },
 }
