@@ -11,6 +11,9 @@ export const  RECEIVE_TWOLIST= "receive_twolist"
 
 export const  RECEIVE_TABS= "receive_tabs"
 
+export const  RECEIVE_RECOMMEN= "receive_recommen"
+
+
 
 
 

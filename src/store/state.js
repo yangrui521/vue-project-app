@@ -3,5 +3,6 @@ export default {
   shouyeTop:[],
   shouyeLunbo:[],
   twoList:[],
-  tabs:[]
+  tabs:[],
+  recommen:[]
 }

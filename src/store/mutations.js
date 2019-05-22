@@ -3,7 +3,8 @@ import {
   RECEIVE_SHOUYETOP,
   RECEIVE_SHOUYELUNBO,
   RECEIVE_TWOLIST,
-  RECEIVE_TABS
+  RECEIVE_TABS,
+  RECEIVE_RECOMMEN
 } from './mutation-types'
 
 
@@ -22,6 +23,9 @@ export default {
   },
   [RECEIVE_TABS](state,tabs){
     state.tabs = tabs
-    console.log(tabs)
+  },
+  [RECEIVE_RECOMMEN](state,recommen){
+    state.recommen = recommen
+    console.log(recommen)
   },
 }

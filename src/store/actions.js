@@ -1,10 +1,11 @@
-import {reqList, reqShouye,reqTabs} from '../api/index'
+import {reqList, reqShouye,reqTabs,reqRecommendData} from '../api/index'
 import {
   RECEIVE_SHOUYE,
   RECEIVE_SHOUYETOP,
   RECEIVE_SHOUYELUNBO,
   RECEIVE_TWOLIST,
-  RECEIVE_TABS
+  RECEIVE_TABS,
+  RECEIVE_RECOMMEN
 } from './mutation-types'
 
 
@@ -43,7 +44,15 @@ export default {
     if (result.code==="200"){
       const tabs = result.data
       commit(RECEIVE_TABS,tabs)
-      console.log(tabs)
     }
   },
+  async getCommen({commit}){
+    const result = await reqRecommendData()
+    if (result.code==="200"){
+      const recommen = result.data
+      commit(RECEIVE_RECOMMEN,recommen)
+      console.log(recommen)
+    }
+  },
+
 }

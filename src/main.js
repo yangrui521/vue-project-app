@@ -8,6 +8,11 @@ import './mockData/mockServer'
 import 'lib-flexible/flexible'
 import './validate/index'
 
+/*import VueScroller from 'vue-scroller'
+
+
+
+Vue.use(VueScroller)*/
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

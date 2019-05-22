@@ -5,8 +5,8 @@
         <i class="iconfont icon-home" @click="$router.push('/home')"></i>
       </div>
       <div class="headerCenter">
-        <span class="span1" :class="{hong:isShow}" @click="isShow=true">发现</span>
-        <span class="span2" :class="{hong:!isShow}" @click="isShow=false">甄选家</span>
+        <span class="span1" :class="{hong:isShow}" @click="isShow=true;$router.push('/article/faxian')">发现</span>
+        <span class="span2" :class="{hong:!isShow}" @click="isShow=false;$router.push('/article/zhenxuan')">甄选家</span>
       </div>
       <div class="headerRight">
         <i class="iconfont icon-icon-test left" @click="$router.push('/search')"></i>
@@ -22,6 +22,7 @@
         </li>
       </ul>
     </div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -38,10 +39,10 @@
     },
     mounted(){
       this.$store.dispatch('getTabs')
-      new BScroll('.header_nav',{
-        scrollX:true,
-        click: true,
-      })
+        new BScroll('.header_nav',{
+          scrollX:true,
+          click: true,
+        })
     },
     computed:{
       ...mapState({
@@ -51,15 +52,25 @@
     methods:{
       addActive(index){
         this.indexx = index
+        switch (index) {
+          case 0:{
+            this.$router.push('/article/faxian')
+            break
+          }
+          case 1:{
+            this.$router.push('/article/zhenxuan')
+            break
+          }
+        }
       }
-    }
+    },
+   
   }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   .article
     font-size: 24px;
-    height 100%
     position relative
     background-color #fff
     .personalHeader
@@ -114,14 +125,17 @@
         .left
           margin-right 24px
     .header_nav
-      width 100%
+      background-color #fafafa
+      position relative
+      z-index 10
+      width 750px
       height 114px
       padding 0 0 25px
       margin-top 124px
       white-space nowrap
       overflow hidden
       .header_nav_ul
-        width 950px
+        width 1400px
         .header_nav_li
           height 114px
           line-height 114px

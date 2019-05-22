@@ -31,7 +31,7 @@
   import ZhuanTi from './component/zhuanti/zhuanti'
   import ZhongChou from './component/zhongchou/zhongchou'
   import FuYong from './component/fuyong/fuyong'
-  import Footer from './component/footer/footer'
+  import Footer from './component/footer/Footer'
 
 
 

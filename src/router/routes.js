@@ -6,7 +6,8 @@ import ShopCard from '../pages/ShopCard/ShopCard'
 import Search from '../pages/Home/Search/Search'
 import PhoneLogin from '../pages/Personal/phoneLogin/phoneLogin'
 import EmailLogin from '../pages/Personal/EmailLogin/EmailLogin'
-
+import FaXian from '../pages/Article/faxian/faxian'
+import ZhenXuan from '../pages/Article/zhenxuan/zhenxuan'
 
 
 export default [
@@ -20,7 +21,21 @@ export default [
   },
   {
     path:'/article',
-    component:Article
+    component:Article,
+    children: [
+      {
+        path:'/article/faxian',
+        component:FaXian,
+      },
+      {
+        path:'/article/zhenxuan',
+        component:ZhenXuan,
+      },
+      {
+        path:'',
+        redirect: '/article/faxian'
+      },
+    ]
   },
   {
     path:'/personal',

@@ -1,5 +1,5 @@
 <template>
-	<div class="footer">
+	<div class="Footer">
     <div class="footer_content">
       <div class="footer_content_type">
         <a href="javascript:;" class="xiazai">下载App</a>
@@ -20,7 +20,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-  .footer
+  .Footer
     background-color #414141
     border-top 1px solid #eee
     width 100%
