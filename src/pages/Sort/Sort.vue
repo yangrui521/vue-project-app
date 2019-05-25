@@ -1,7 +1,7 @@
 <template>
   <div class="sort">
     <div class="sort_header">
-      <div class="sort_header_content">
+      <div class="sort_header_content" @click="$router.push('/search')">
         <img src="http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/search2-553dba3aff.png" alt="">
         <span>搜索商品，共21726件好货</span>
       </div>

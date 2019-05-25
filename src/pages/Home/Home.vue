@@ -33,13 +33,6 @@
   import FuYong from './component/fuyong/fuyong'
   import Footer from './component/Footer/Footer'
 
-
-
-
-
-
-
-
   export default {
     name: "Home",
     
